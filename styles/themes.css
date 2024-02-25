@@ -4,3 +4,70 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --weight-font-title: 700;
+    --weight-font-text: 400;
+    --bg-color: #fff;
+    --main-color: #000;
+    --gradient-color-stripe-1: #d3d3d3;
+    --gradient-color-stripe-2: transparent;
+    --gradient-color-top: #e7e7e7;
+    --gradient-color-bottom: #1a1a1a;
+    --start-gradient: 0.01%;
+    --bg-image: 
+    repeating-linear-gradient(var(--gradient-color-stripe-1) 0 2px,  
+        var(--gradient-color-stripe-2) 2px 4px),
+    repeating-linear-gradient(to right, var(--gradient-color-stripe-1) 0 2px,  
+        var(--gradient-color-stripe-2) 2px 4px),
+    linear-gradient(var(--gradient-color-top) var(--start-gradient), var(--gradient-color-bottom));
+    --color-stroke-label: #fff;
+    --button-text-color: #fff;
+    --contour-heart-color: #000;
+    --sparks-heart-color: #FF0000;
+}
+
+:root.theme-dark {
+    --weight-font-title: 785;
+    --weight-font-text: 465;
+    --bg-color: #000;
+    --main-color: #00CC14;
+    --gradient-color-stripe-1: #000;
+    --gradient-color-stripe-2: transparent;
+    --gradient-color-top: #007f0c;
+    --gradient-color-bottom: #004306;
+    --start-gradient: 0%;
+    --bg-image: 
+    repeating-linear-gradient(var(--gradient-color-stripe-1) 0 2px,  
+        var(--gradient-color-stripe-2) 2px 4px),
+    repeating-linear-gradient(to right, var(--gradient-color-stripe-1) 0 2px,  
+        var(--gradient-color-stripe-2) 2px 4px),
+    linear-gradient(var(--gradient-color-top) var(--start-gradient), var(--gradient-color-bottom));
+    --color-stroke-label: #000;
+    --button-text-color: #00CC14;
+    --contour-heart-color: #00CC14;
+    --sparks-heart-color: #FF0000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --weight-font-title: 785;
+        --weight-font-text: 465;
+        --bg-color: #000;
+        --main-color: #00CC14;
+        --gradient-color-stripe-1: #000;
+        --gradient-color-stripe-2: transparent;
+        --gradient-color-top: #007f0c;
+        --gradient-color-bottom: #004306;
+        --start-gradient: 0%;
+        --bg-image: 
+        repeating-linear-gradient(var(--gradient-color-stripe-1) 0 2px,  
+            var(--gradient-color-stripe-2) 2px 4px),
+        repeating-linear-gradient(to right, var(--gradient-color-stripe-1) 0 2px,  
+            var(--gradient-color-stripe-2) 2px 4px),
+        linear-gradient(var(--gradient-color-top) var(--start-gradient), var(--gradient-color-bottom));
+        --color-stroke-label: #000;
+        --button-text-color: #00CC14;
+        --contour-heart-color: #00CC14;
+        --sparks-heart-color: #FF0000;
+    }
+}
