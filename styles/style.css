@@ -15,7 +15,7 @@
 */
 
 /*верхний блок*/
-.page { 
+.page {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(min-content, max-content);
@@ -32,7 +32,7 @@
   background-size: cover;
 }
 
-.header { 
+.header {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
